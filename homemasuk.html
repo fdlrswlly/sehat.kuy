@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sehat.Kuy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylelogin.css">
+    <!-- <script src="jquery-3.4.1.min.js"></script> -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <script>
+        $(document).ready(function () {
+            $(".slide:gt(0)").hide();
+            setInterval(function () {
+                $(".slide:first").fadeOut("slow")
+                    .next()
+                    .fadeIn("slow")
+                    .end()
+                    .appendTo(".slider");
+            }, 2000)
+        });
+    </script>
+    <ul class="slider">
+        <li class="slide"><img src="./image/aa.jpg" alt=""></li>
+        <li class="slide"><img src="./image/ab.jpg" alt=""></li>
+        <li class="slide"><img src="./image/ac.jpg" alt=""></li>
+        <li class="slide"><img src="./image/ad.jpg" alt=""></li>
+        <li class="slide"><img src="./image/ae.jpg" alt=""></li>
+    </ul>
+
+
+    <div class="wrap">
+        <!-- bagian sidebar website -->
+        <aside class="sidebar">
+            <div class="widget">
+                <h2>Ayo Sehat</h2>
+                <p>Selamat datang di www.sehat.kuy.com, situs ini menyediakan informasi tentang kesehatan.</p>
+            </div>
+            <div class="widget">
+                <h2>info kesehatan</h2>
+                <p>Teman-teman bisa mendapatkan informasi kesehatan di sini <a target="_blank"
+                        href="sehat.kuy.html">Sehat.kuy.com</a>.</p>
+                        <img src="./image/konidin.gif" width="150px" height="auto">
+            </div>
+        </aside>
+        <!-- akhir bagian sidebar website -->
+
+        <!-- bagian konten Blog -->
+        <div class="blog">
+            <div class="conteudo">
+                <h1>Alasan Gigi Ngilu Harus Memakai Pasta Gigi Sensitif </h1>
+                <hr>
+                <img src="./image/img1.jpg" title="Alasan Gigi Ngilu Harus Memakai Pasta Gigi Sensitif">
+                <hr>
+                <p>
+                    Jika gigi Anda terasa ngilu saat menyantap makanan atau minuman bersuhu panas atau dingin,
+                    bisa jadi
+                    ini menandakan bahwa Anda memiliki gigi sensitif. Untuk meringankan keluhan ini...
+                </p>
+                <a href="konten1.html" class="continue-lendo">Baca Selengkapnya →</a>
+            </div>
+            <div class="conteudo">
+                <h1>Kenali Hormon Penyebab Jerawat dan Cara Menanganinya</h1>
+                <hr>
+                <img src="./image/img2.jpg" title="Kenali Hormon Penyebab Jerawat dan Cara Menanganinya">
+                <hr>
+                <p>
+                    Selama ini, banyak orang yang mengaitkan jerawat dengan kebersihan kulit yang tidak terjaga.
+                    Padahal, hormon juga dapat menyebabkan munculnya jerawat. Hormon penyebab jerawat ini...
+                </p>
+                <a href="jerawat.html" class="continue-lendo">Baca Selengkapnya →</a>
+            </div>
+            <script>
+                    function kirim() {
+                        
+                       var a = document.getElementById("teks").value;
+                      var b = document.getElementById("comment").value;
+                      var c = "";
+                      var d = "";
+                        if (a == c && b == d){
+                            alert("Harus mengisi komentar");
+                        }
+                        else{
+                            alert("Komentar Berhasil!")
+                        document.getElementById("teks").value="";
+                        document.getElementById("comment").value="";
+                        }
+                    }
+                </script>
+            <div class="conteudo">
+                <form>
+                    <label for="nama">Nama:</label><br>
+                    <input type=text name="text" id="teks" size="35"><br>
+                    <div class="form-group">
+                        <label for="comment">Comment:</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                    <input type="button" onclick="kirim()" value="Komentar" />
+                    <input name="Clear" type="reset" value="Batal" />
+                </form>
+            </div>
+
+        </div>
+        <!-- akhir bagian konten Blog -->
+
+    </div>
+
+    
+    <div class="footer">
+        <br>
+        <p>results by:</p>
+        <p>Amelia Fitri S - Ahmad Raihan - Fadhly Aulia R</p><br>
+        <p><img src="./image/gmail.png" width="auto" height="20px"><a href="http://gmail.com"> sehat.kuy@gmail.com</a> <img src="./image/facebook.png" width="auto" height="20px"><a href="http://facebook.com"> sehat.kuy</a>
+            <img src="./image/instagram.png" width="auto" height="20px"><a href="http://instagram.com"> @sehat.kuy</a></p>   
+            
+    </div>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="home.html"><img src="./image/logo.png" alt="logo" height="30"
+                            width="auto"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="home.html">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Penyakit<span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="asamurat.html">Asam Urat</a></li>
+                                <li><a href="batuginjal.html">Batu Ginjal</a></li>
+                                <li><a href="diabetes.html">Diabetes</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Jenis Obat<span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="obat1.html">Acarbose</a></li>
+                                <li><a href="obat2.html">Colchicine</a></li>
+                                <li><a href="obat3.html">Batugin</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cek Kesehatan<span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="kalkulatorbmi.html">Kalkulator BMI</a></li>
+                                <li><a href="kalkulatorbmr.html">Kalkulator BMR</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><button class="nav" onclick="logout()">Logout</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <script>
+    function logout(){
+        window.location = "home.html";
+    }
+    </script>
+</body>
+
+</html>

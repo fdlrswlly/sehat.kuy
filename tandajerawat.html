@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Sehat.Kuy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script src="jquery-3.4.1.min.js"></script> -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="stylekonten.css">
+    <link rel="stylesheet" href="stylelogin.css">
+    <style>
+         .footer{
+        top:2500px;
+    }
+    @media screen and (max-width: 960px){
+        .footer{
+            top:3500px;
+        }
+    }
+    </style>
+</head>
+<body>
+    
+
+<!-- Login -->
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    function masuk() {
+        var usr = "admin";
+        var psd = "adminaja";
+        var username = document.getElementById("user").value;
+        var password = document.getElementById("pass").value;
+
+        if (username == usr && password == psd) {
+            alert("login berhasil");
+            document.getElementById('id01').style.display = 'none'
+
+        }
+        else {
+            alert("username&password salah");
+        }
+    }
+</script>
+<div id="id01" class="modal">
+    <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <img src="./image/img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" id="user" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" id="pass" placeholder="Enter Password" name="psw" required>
+
+            <button type="button" onclick="masuk()">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+</div>
+<!-- Batas Login -->
+
+    <div class="wrap">
+        <!-- bagian sidebar website -->
+        <aside class="sidebar">
+            <div class="widget">
+                <h2>Artikel Terkait</h2>
+                <a href="jerawat.html">
+                    <img src="./image/img2.jpg" width="150px" height="auto" title="Kenali Hormon Penyebab Jerawat dan Cara Menanganinya">
+                    <h4>Kenali Hormon Penyebab Jerawat dan Cara Menanganinya</h4>
+                </a>
+                </div>
+                <br /><br />
+        </aside>
+        <!-- akhir bagian sidebar website -->
+        <!-- bagian konten Blog -->
+        <div class="blog">
+            <div class="conteudo">
+
+                <h1>Kenali 7 Kebiasaan yang Membuat Jerawat Betah di Wajah</h1>
+                <hr>
+                <p>
+                    Jerawat pada wajah dapat menimbulkan rasa tidak nyaman sekaligus mengganggu penampilan. Siapa sih yang tidak sebal saat mengetahui adanya jerawat yang muncul ketika sedang berkaca?
+                    Tanpa disadari, ada beberapa kebiasaan sehari-hari yang bisa menyebabkan jerawat muncul. Yuk, ketahui apa saja kebiasaan itu agar wajah terbebas dari jerawat.
+</p>
+                <center>
+                    <img src="./image/jerawat.jpg">
+                </center>
+
+                <h3>Berbagai Kebiasaan Penyebab Jerawat</h3>
+                <p>
+                    Waspadai beberapa kebiasaan berikut ini, karena tanpa disadari dapat menjadi penyebab munculnya jerawat:
+                    <ul>
+                        <li><h5>Terlalu sering mencuci muka</h5>
+                <p>
+                    Wajah yang kotor sering kali dianggap sebagai penyebab jerawat. Namun, mencuci muka terlalu sering juga tidak baik, karena dapat membuat wajah kehilangan minyak alami kulit dan mendorong kulit memproduksi minyak lebih banyak lagi. Efeknya, jerawat akan kembali muncul.
+                    Nah, agar masalah ini tidak kamu alami, disarankan untuk mencuci muka sehari dua kali. Saat mencuci muka, kamu bisa menggunakan air hangat atau air bersih, dan sabun pembersih wajah dengan formulasi yang ringan. Oleskan pembersih wajah menggunakan ujung jari dan pijat secara lembut. Hindari menggunakan kain waslap untuk menyeka wajah, karena berisiko menyebabkan iritasi kulit.</p></li>
+                <li>
+                    <h5>Memencet jerawat</h5>
+                    <p>
+                        Mencoba menghilangkan jerawat dengan cara memencet jerawat, justru dapat menyebabkan masalah baru pada kulit. Sebab saat jerawat dipencet dan ditekan, sumbatan pada pori-pori kulit dapat masuk lebih dalam. Ini membuat proses penyembuhan menjadi lebih lama dan dapat meninggalkan bekas jerawat.
+                        Untuk mengatasi jerawat, gunakan obat khusus jerawat. Hindari menyentuh jerawat, apalagi dengan tangan yang kotor, sebab minyak dan kotoran dari tangan dapat menyumbat pori-pori dan memperparah jerawat.</p>
+                </li>
+                <li>
+                    <h5>Menggunakan telepon seluler (ponsel) yang kotor</h5>
+                    <p>
+                        Ponsel yang baru selesai dipakai menelepon akan terkena minyak dan keringat. Apalagi jika tekanan pada pipi kemudian memicu jerawat pecah. Jika kotoran tersebut tidak dibersihkan sebelum digunakan kembali, maka kotoran beserta bakteri yang sudah berkembang biak dapat kembali ke wajah. Jangan malas membersihkan layar ponsel dan disarankan menggunakan ear phone saat menelepon untuk menghindari jerawat muncul.
+                    </p>
+                </li>
+                <li>
+                    <h5>Produk rambut yang menetes pada wajah</h5>
+                    <p>
+                        Jauhkan minyak rambut, gel dan berbagai produk rambut dari dahi atau bagian wajah lainnya, karena dapat memicu timbulnya jerawat. Produk-produk tersebut dapat menyumbat pori-pori. Selain itu, cuci rambut dengan teratur dan hindari penggunaan produk rambut yang banyak mengandung minyak.</p>
+                </li>
+                <li>
+                    <h5>Menggunakan make-up berlebihan</h5>
+                    <p>
+                        Hindari penggunaan make-up secara berlebihan. Gunakan obat jerawat sebelum menggunakan make-up, kemudian bersihkan menjelang tidur. Untuk kulit berjerawat, pilih make-up dengan label bebas minyak dan tidak menyebabkan komedo (non-comedogenic). Ada pula jenis make-up yang bisa kamu gunakan untuk membantu menyembunyikan jerawat. </p>
+                </li>
+                <li>
+                    <h5>Terlalu banyak konsumsi makanan manis dan olahan</h5>
+                    <p>
+                        Hingga saat ini belum diketahui pasti makanan apa saja yang bisa menyebabkan jerawat. Namun, disarankan untuk membatasi konsumsi makanan manis dan olahan, seperti biskuit, keik, roti putih dan pasta, serta keripik kentang. Makanan dari produk susu juga sebaiknya dibatasi, karena diduga juga berpengaruh terhadap munculnya jerawat. </p>
+                </li>
+                <li>
+                    <h5>Kurang telaten mengobati jerawat</h5>
+                    <p>
+                        Proses penyembuhan jerawat membutuhkan waktu beberapa minggu. Jerawat tidak dapat segera menghilang hanya dalam satu hari. Jika obat bebas untuk jerawat tidak dapat mengatasi masalah kulit berjerawat dalam waktu 2-4 minggu, sebaiknya berkonsultasilah dengan dokter kulit untuk mendapatkan penanganan lebih lanjut.</p>
+                </li>
+                </ul>
+            </div>
+            <script>
+                    function kirim() {
+                        
+                       var a = document.getElementById("teks").value;
+                      var b = document.getElementById("comment").value;
+                      var c = "";
+                      var d = "";
+                        if (a == c && b == d){
+                            alert("Harus mengisi komentar");
+                        }
+                        else{
+                            alert("Komentar Berhasil!")
+                        document.getElementById("teks").value="";
+                        document.getElementById("comment").value="";
+                        }
+                    }
+                </script>
+            <div class="conteudo">
+                <form>
+                    <label for="nama">Nama:</label><br>
+                    <input type=text name="text" id="teks" size="35"><br>
+                    <div class="form-group">
+                        <label for="comment">Comment:</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                    <input type="button" onclick="kirim()" value="Komentar" />
+                    <input name="Clear" type="reset" value="Batal" />
+                </form>
+            </div>
+            </div>
+            </div>
+            <div class="footer">
+                <br>
+                <p>results by:</p>
+                <p>Amelia Fitri S - Ahmad Raihan - Fadly Aulia R</p><br>
+                <p><img src="./image/gmail.png" width="auto" height="20px"><a href="http://gmail.com"> sehat.kuy@gmail.com</a> <img src="./image/facebook.png" width="auto" height="20px"><a href="http://facebook.com"> sehat.kuy</a>
+                    <img src="./image/instagram.png" width="auto" height="20px"><a href="http://instagram.com"> @sehat.kuy</a></p>   
+                    
+            </div>
+            <header>
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="home.html"><img src="./image/logo.png" alt="logo" height="30" width="auto"></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="home.html">Home</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        Penyakit<span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="asamurat.html">Asam Urat</a></li>
+                                        <li><a href="batuginjal.html">Batu Ginjal</a></li>
+                                        <li><a href="diabetes.html">Diabetes</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        Jenis Obat<span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="obat1.html">Acarbose</a></li>
+                                        <li><a href="obat2.html">Colchicine</a></li>
+                                        <li><a href="obat3.html">Batugin</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        Cek Kesehatan<span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="kalkulatorbmi.html">Kalkulator BMI</a></li>
+                                        <li><a href="kalkulatorbmr.html">Kalkulator BMR</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><button class="nav" onclick="document.getElementById('id01').style.display='block'"
+                                    style="width:auto;">Login</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+</body>
+</html>
